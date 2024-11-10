@@ -1,0 +1,167 @@
+.discover-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Cards Layout with Grid */
+  .discover-cards {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr; /* Three columns layout (Card, Image, Card) */
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center; /* Vertically center items in each cell */
+    justify-content: center;
+    
+  }
+  
+  .discover-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    width: 300px; /* Ensure card takes full width within grid */
+  }
+  
+  .discover-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    margin-bottom: 15px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .text-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0;
+    color: #222;
+  }
+  
+  .rating {
+    margin: 10px 0;
+  }
+  
+  .rating span {
+    font-size: 1.2rem;
+  }
+  
+  .text-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Main image in the center (only in the first row) */
+  .section-image {
+    grid-column: 2; /* Place the image in the second column of the grid */
+    justify-self: center; /* Center the image horizontally */
+  }
+  
+  .discover-img {
+    width: 300px;
+    
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .discover-cards {
+      grid-template-columns: 1fr; /* Stack all cards and image in one column */
+      gap: 20px;
+    }
+  }
+  
+  .discover-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .discover-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .image-and-name {
+    display: flex;
+    align-items: start;
+    
+    gap: 10px;
+  }
+  
+  .image-container {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .rating {
+    margin: 8px 0;
+  }
+  
+  .rating span {
+    color: gold;
+  }
+  
+  .description {
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+  }
+  
+  .section-image {
+    width: 300px;
+    height: auto;
+  }
+  
+  .discover-img {
+    width: 100%;
+    border-radius: 8px;
+  }
+.bule{
+    color: skyblue;
+}  
