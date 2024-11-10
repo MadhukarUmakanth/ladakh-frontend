@@ -7,7 +7,6 @@ import './index.css';
 function Booking() {
   const navigate = useNavigate();
 
-  // Function to handle booking and navigate to BookingDetails
   const handleBooking = () => {
     navigate('/booking-details');
   };

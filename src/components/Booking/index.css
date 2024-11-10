@@ -1,17 +1,17 @@
-/* Booking Section */
+/* General Layout */
 .booking-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px;
     background-color: #f8f9fa;
     gap: 20px;
 }
 
 .booking-content {
     display: flex;
+    flex-direction: column;
     max-width: 900px;
-    height: 400px;
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -20,12 +20,13 @@
 
 .booking-text {
     padding: 20px;
-    max-width: 50%;
+    max-width: 100%;
+    text-align: center;
 }
 
 .booking-text h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 100;
     margin: 0;
     color: #222;
@@ -37,28 +38,39 @@
     color: #555;
 }
 
-.icon{
-    margin-left: 5px;
-    font-size: 30px;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-.booking-image .image {
-    width: 40vw;
-    height: 100%;
+
+.icon {
+    font-size: 25px;
+}
+
+/* Image adjustments */
+.booking-image {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 /* Booking Form */
 .booking-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: 700px;
+    width: 90%;
+    max-width: 600px;
     padding: 15px;
     background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-top: -30px;
+    margin-top: -20px;
     z-index: 1;
 }
 
@@ -66,6 +78,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 100%;
 }
 
 .form-group label {
@@ -78,7 +91,9 @@
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 100px;
+    width: 80%;
+    max-width: 120px;
+    margin-right: 10px;
 }
 
 .book-button {
@@ -90,8 +105,50 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .book-button:hover {
     background-color: #1558b0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .booking-content {
+        flex-direction: row;
+    }
+
+    .booking-text {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .booking-form {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .booking-text h2 {
+        font-size: 2.5em;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .input {
+        max-width: 200px;
+    }
+
+    .book-button {
+        max-width: 120px;
+    }
 }

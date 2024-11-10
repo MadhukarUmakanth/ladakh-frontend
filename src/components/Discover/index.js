@@ -82,6 +82,7 @@ function Discover() {
 
 
             {/* Additional Cards */}
+            <div>
             <div className="discover-cards">
             <div className="discover-card">
             <div className="card-content">
@@ -140,6 +141,7 @@ function Discover() {
             us back there after a month, Urgan was very
             responsible and took good care of my friends
             and me.<span className='bule'>read more</span></p>
+            </div>
             </div>
             </div>
             </div>
